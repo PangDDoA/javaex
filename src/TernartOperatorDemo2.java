@@ -8,7 +8,6 @@ public class TernartOperatorDemo2 {
     int remainder = number % 2;
     String evenOdd = (remainder == 0) ? "짝수" : "홀수" ;
     System.out.printf("입력한 수는 %d 이며, %s 입니다.", number, evenOdd);
-    git a
     /*if (remainder == 0) {
       System.out.printf("입력한 숫자는 %d이며, 짝수입니다.", number); }
       else
