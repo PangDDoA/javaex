@@ -21,7 +21,7 @@ public class ArithmeticDemo {
     int i = in.nextInt();
     int result3 = 3 / i;
     System.out.print(result3);
-    if(i == 0);
+    //if(i == 0);  =>다시 처음으로 돌아가는 코드 정리해보기.
 
   }
 
