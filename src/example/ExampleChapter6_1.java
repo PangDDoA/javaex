@@ -1,3 +1,5 @@
+package example;
+
 public class ExampleChapter6_1 {
   public static void main(String[] args) {
 //Printer printer = new printer()

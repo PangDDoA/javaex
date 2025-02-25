@@ -1,3 +1,5 @@
+package example;
+
 public class ExampleChapter2 {
   public static void main(String[] args) {
     int x = 10;

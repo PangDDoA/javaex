@@ -1,5 +1,6 @@
+package array;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ArrayLIstDemo2 {
   public static void main(String[] args) {

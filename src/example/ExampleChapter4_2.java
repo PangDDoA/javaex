@@ -1,3 +1,5 @@
+package example;
+
 public class ExampleChapter4_2 {
   public static void main(String[] args) {
     String grade = "B";

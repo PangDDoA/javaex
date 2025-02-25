@@ -1,3 +1,5 @@
+package array;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,6 +29,10 @@ public class ArrayListDemo3 {
     for (int i = 0; i < scores.size(); i++) {
       total += scores.get(i);
     }
+
+    //for () // inHencedfor
+
+
     float avg = total / (float)scores.size();
     System.out.println("total = " + total);
     System.out.println("avg = " + avg);
