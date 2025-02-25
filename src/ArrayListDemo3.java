@@ -10,18 +10,25 @@ public class ArrayListDemo3 {
   //5. 입력받은 점수가 저장되어 있는 배열을 전부 읽어서 합계와 평균을 구한다.
   //6. 입력받은 점수, 합계와 평균을 출력한다.
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-
-    ArrayList<Integer> scores = new ArrayList<>();
-    System.out.println("scores = " + scores);
-    int total = 0;
-    float avg = 0.0f;
-    while (true){
-      if( < 0){
+    Scanner in = new Scanner(System.in);                                        // 입력을 위한 scanner 선언
+    ArrayList<Integer> scores = new ArrayList<>();                              // 동적변수를 선언
+    int score , total = 0;                                                      // 변수 score와 total을 선언
+    while(true) {                                                               // 종료 선언 전까지 입력을 위해 while(true)를 사용.
+      System.out.print("과목의 점수를 입력하세요. (입력 종료하려면 - 값 입력): ");      // 메시지 등과 같은 특정 문자열을 표시하고 입력 대기. ==>
+      score = in.nextInt();                                                     //
+      if(score < 0) {
         break;
+      } else {
+        scores.add(score);
       }
     }
+    System.out.println("scores = " + scores);
 
-
+    for (int i = 0; i < scores.size(); i++) {
+      total += scores.get(i);
+    }
+    float avg = total / (float)scores.size();
+    System.out.println("total = " + total);
+    System.out.println("avg = " + avg);
   }
 }
