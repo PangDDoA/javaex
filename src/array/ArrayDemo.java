@@ -18,5 +18,9 @@ public class ArrayDemo {
     avg = total / (double)scores.length;
     System.out.println("total = " + total);
     System.out.println("avg = " + avg);
+
+    for (String arg : args){
+      System.out.println("arg = " + arg);
+    }
   }
 }
